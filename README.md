@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# Frontend Banking Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This application resembles a bank interface to create accounts, make deposits,
+withdrawals and show the information currently on memory
 
-## Available Scripts
+## Requirements
 
-In the project directory, you can run:
+Your website should include the following functionality. Please review the rubric below for specific information on how each element will be graded. 
 
-### `npm start`
+1. Navigation Bar
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    - [X] Includes Create Account, Deposit, Withdraw, All Data, and Home pages
+    - [X] Routing: Each navigation bar item routes the user to the relevant page. For example, by selecting Home the user should be directed to the Home page. 
+    - [X] Styled with Bootstrap
+    - [X] Highlighting: Each navigation bar item is highlight when you are on that page. For example, Home is highlighted when you are on the home page. 
+    - [X] Hover effect: When your mouse hovers over a navigation bar item, you see a pop up with a description of that page.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Home Page
 
-### `npm test`
+    - [X] Includes bank title, image, and a welcome message. 
+    - [X] Styled as a Bootstrap card.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Create Account Page
 
-### `npm run build`
+    Includes a Bootstrap card with a form that has:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    - [X] Name input field
+    - [X] Email address input field
+    - [X] Password input field
+    - [X] Create account button
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Create Account Page Functionality
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Create account page should include the following functionality:
 
-### `npm run eject`
+    - [X] Success message: Upon selecting the create account button the user should see a success message. 
+    - [X] Add Another Account Button: Upon selecting the create account button, the user should see an add another account button. 
+    - [X] Cleared Create Account Form: Upon selecting the create account button, t will open a cleared create account form.
+    - [X] Name validation: The user receives an alert if the name field is left blank. 
+    - [X] Email validation: The user receives an alert if this field is blank 
+    - [X] Password validation: The user receives an alert if the password is less than 8 characters long. 
+    - [X] Disable submit button if nothing is inputted
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Deposit Page
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    Includes a Bootstrap card with a form that has:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    - [X] Deposit input field 
+    - [X] Deposit button 
+    - [X] Balance information displays above deposit form on the card
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+6. Deposit Page Functionality
 
-## Learn More
+    Deposit page should include the following functionality:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    - [X] Updated Balance: When a user deposits, the balance updates. 
+    - [X] Success Message: When a user completes the deposit form, they receive a success message confirming their deposit was received. 
+    - [X] Not A Number Alert: User receives an alert if they add something that is not a number. 
+    - [X] Negative Deposit Alert: User receives an alert if they try to deposit a negative number.
+    - [X] Disable deposit button if nothing is input
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+7. Withdraw Page
 
-### Code Splitting
+Includes a Bootstrap card with a form that has:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    - [X] Withdraw input field 
+    - [X] Withdraw button 
+    - [X] Balance information displays above deposit form on the card
 
-### Analyzing the Bundle Size
+8. Withdraw Page Functionality
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    Withdraw page should include the following functionality:
 
-### Making a Progressive Web App
+    - [X] Updated Balance: When a user completes the withdrawal form, the number submitted is subtracted from the total balance. 
+    - [X] Success Message: When a user completes the withdrawal form, they receive a success message confirming that their withdraw was processed. 
+    - [X] Account Overdraft Feature: When a user withdraws a number higher than the account balance, the user receives an alert message on the withdraw page.
+    - [X] Not A Number Alert: User receives an alert if they add something that is not a number. 
+    - [X] Disable deposit button if nothing is input
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+9. All Data Page Functionality
 
-### Advanced Configuration
+    All Data page includes the following functionality:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    - [X] Track User Submissions: All user submissions appear on All Data page.
+    - [X] All Data Displayed On Bootstrap Card: All Data is styled and displayed on a Bootstrap card instead of JSON.
 
-### Deployment
+## How to run
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Prerequisites
 
-### `npm run build` fails to minify
+- Install NodeJS
+- Install NPM
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Step-by-step
+
+1. Download the repository to your computer
+2. Open a terminal window
+3. Navigate to the project's folder
+4. Execute `npm start`
+    This will open a browser at http://localhost:3000 with the application
