@@ -1,3 +1,9 @@
 {
-    "npm.scriptExplorerAction": "run"
+    "npm.scriptExplorerAction": "run",
+    "cSpell.words": [
+        "alldata",
+        "createaccount",
+        "txtcolor",
+        "webfonts"
+    ]
 }
