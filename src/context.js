@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 
 import { createContext } from 'react';
@@ -12,7 +13,7 @@ export function Card(props){
     }
 
     return (
-        <div className={classes()} style={{maxWidth: props.fullWidth ? null : "18rem"}}>
+        <div className={classes()} style={{maxWidth: props.fullWidth ? null : '18rem'}}>
             { props.header ? (
                 <div className="card-header">{props.header}</div>
             ) : null }
