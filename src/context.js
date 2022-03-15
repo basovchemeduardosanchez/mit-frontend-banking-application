@@ -13,7 +13,9 @@ export function Card(props){
 
     return (
         <div className={classes()} style={{maxWidth: "18rem"}}>
-            <div className="card-header">{props.header}</div>
+            { props.header ? (
+                <div className="card-header">{props.header}</div>
+            ) : null }
             <div className="card-body">
                 {props.title && (<h5 className="card-title">{props.title}</h5>)}
                 {props.text && (<p className="card-text">{props.text}</p>)}
