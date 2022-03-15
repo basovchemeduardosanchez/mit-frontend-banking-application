@@ -2,7 +2,9 @@
     "npm.scriptExplorerAction": "run",
     "cSpell.words": [
         "alldata",
+        "browserslist",
         "createaccount",
+        "predeploy",
         "TTFB",
         "txtcolor",
         "webfonts"
