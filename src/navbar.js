@@ -1,6 +1,11 @@
 import React from 'react';
 
+import { useLocation } from 'react-router-dom';
+
 export function NavBar(){
+    const location = useLocation();
+    console.log( location.pathname );
+
     return(
         <>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -11,22 +16,25 @@ export function NavBar(){
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
-                            <a className="nav-link" href="#/CreateAccount/">Create Account</a>
+                            <a className={ `nav-link ${ location.pathname === '/' ? 'active' : '' }` } href="#/">Home</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className={ `nav-link ${ location.pathname === '/CreateAccount/' ? 'active' : '' }` } href="#/CreateAccount/">Create Account</a>
                         </li>
                         { /*<li className="nav-item">
-                            <a className="nav-link" href="#/login/">Login</a>
+                            <a className={ `nav-link ${ location.pathname === '/login/' ? 'active' : '' }` } href="#/login/">Login</a>
                         </li>*/ }
                         <li className="nav-item">
-                            <a className="nav-link" href="#/deposit/">Deposit</a>
+                            <a className={ `nav-link ${ location.pathname === '/deposit/' ? 'active' : '' }` } href="#/deposit/">Deposit</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#/withdraw/">Withdraw</a>
+                            <a className={ `nav-link ${ location.pathname === '/withdraw/' ? 'active' : '' }` } href="#/withdraw/">Withdraw</a>
                         </li>
                         { /*<li className="nav-item">
-                            <a className="nav-link" href="#/balance/">Balance</a>
+                            <a className={ `nav-link ${ location.pathname === '/balance/' ? 'active' : '' }` } href="#/balance/">Balance</a>
                         </li>*/ }
                         <li className="nav-item">
-                            <a className="nav-link" href="#/alldata/">AllData</a>
+                            <a className={ `nav-link ${ location.pathname === '/alldata/' ? 'active' : '' }` } href="#/alldata/">AllData</a>
                         </li>          
                     </ul>
                 </div>
