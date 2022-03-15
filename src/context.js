@@ -12,7 +12,7 @@ export function Card(props){
     }
 
     return (
-        <div className={classes()} style={{maxWidth: "18rem"}}>
+        <div className={classes()} style={{maxWidth: props.fullWidth ? null : "18rem"}}>
             { props.header ? (
                 <div className="card-header">{props.header}</div>
             ) : null }
