@@ -17,6 +17,7 @@ export function Withdraw(){
         setStatus( '' );
         if ( !isAmountValid() ) {
             setStatus( 'Error: The amount is invalid' );
+            setTimeout(() => setStatus(''),3000);
             return;
         }
 
@@ -24,6 +25,7 @@ export function Withdraw(){
         
         if ( newBalance < 0 ){
             setStatus( 'Error: The amount is greater than the current balance' );
+            setTimeout(() => setStatus(''),3000);
             return;
         }
 

@@ -17,6 +17,7 @@ export function Deposit(){
         setStatus( '' );
         if ( !isAmountValid() ) {
             setStatus( 'Error: The amount is invalid' );
+            setTimeout(() => setStatus(''),3000);
             return;
         }
 
