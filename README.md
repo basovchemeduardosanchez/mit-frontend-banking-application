@@ -61,7 +61,7 @@ Your website should include the following functionality. Please review the rubri
 
 7. Withdraw Page
 
-Includes a Bootstrap card with a form that has:
+    Includes a Bootstrap card with a form that has:
 
     - [X] Withdraw input field 
     - [X] Withdraw button 
