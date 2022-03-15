@@ -98,3 +98,7 @@ Your website should include the following functionality. Please review the rubri
 3. Navigate to the project's folder
 4. Execute `npm start`
     This will open a browser at http://localhost:3000 with the application
+
+## References
+
+- https://platzi.com/tutoriales/1548-react/4065-guia-para-usar-github-pages-en-tus-proyectos-de-reactjs/
